@@ -77,8 +77,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/galaxysplus/splash/ARIESVE.rle:root/ARIESVE.rle \
     device/samsung/galaxysplus/splash/charging.rle:root/charging.rle \
     device/samsung/galaxysplus/splash/ARIESVE.rle:recovery/ARIESVE.rle \
-    device/samsung/galaxysplus/splash/charging.rle:recovery/charging.rle \
-    device/samsung/galaxysplus/bootanimation.zip:system/media/bootanimation.zip
+    device/samsung/galaxysplus/splash/charging.rle:recovery/charging.rle 
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
