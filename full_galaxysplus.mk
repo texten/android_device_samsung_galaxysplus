@@ -41,8 +41,8 @@ $(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/emmc;/mnt/usbdisk \
-    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+    ro.additionalmounts=/mnt/external_sd;/mnt/usbdisk \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/external_sd
 
 # Release name and versioning
 PRODUCT_VERSION_DEVICE_SPECIFIC :=

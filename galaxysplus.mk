@@ -94,6 +94,7 @@ PRODUCT_COPY_FILES += \
 	device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	device/samsung/galaxysplus/etc/vold.fstab:system/etc/vold.fstab \
 	device/samsung/galaxysplus/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
+
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
 	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf 
