@@ -89,8 +89,8 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/ariesve-common/init.qcom.rc:root/init.qcom.rc \
-	device/samsung/ariesve-common/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
 	device/samsung/ariesve-common/lpm.rc:root/lpm.rc \
+	device/samsung/galaxysplus/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
 	device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	device/samsung/galaxysplus/etc/vold.fstab:system/etc/vold.fstab \
 	device/samsung/galaxysplus/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
