@@ -94,7 +94,6 @@ PRODUCT_COPY_FILES += \
 	device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
 	device/samsung/galaxysplus/etc/vold.fstab:system/etc/vold.fstab \
 	device/samsung/galaxysplus/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
-
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
 	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf 
@@ -123,7 +122,8 @@ PRODUCT_COPY_FILES += \
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/ariesve-common/sec_jack.kl:system/usr/keylayout/sec_jack.kl
+	device/samsung/ariesve-common/sec_jack.kl:system/usr/keylayout/sec_jack.kl \
+	device/samsung/galaxysplus/melfas_touchkey.kl:system/usr/keylayout/melfas_touchkey.kl
 
 # apns config file
 PRODUCT_COPY_FILES += \
