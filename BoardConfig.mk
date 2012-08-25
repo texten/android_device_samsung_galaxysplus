@@ -87,6 +87,7 @@ WITH_JIT := true
 ENABLE_JSC_JIT := true
 JS_ENGINE := v8
 BOARD_USE_SKIA_LCDTEXT := true
+
 #TARGET_HAVE_LOCAL_TSLIB := true
 
 # Radio
