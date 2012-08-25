@@ -49,11 +49,11 @@
 /etc/firmware/yamato_pfp.fw
 /etc/firmware/yamato_pm4.fw
 
-/wifi/bcm4329_aps.bin
-/wifi/bcm4329_mfg.bin
-/wifi/bcm4329_sta.bin
-/wifi/nvram_mfg.txt
-/wifi/nvram_net.txt
+/etc/wifi/bcm4329_aps.bin
+/etc/wifi/bcm4329_mfg.bin
+/etc/wifi/bcm4329_sta.bin
+/etc/wifi/nvram_mfg.txt
+/etc/wifi/nvram_net.txt
 
 /firmware/CE147F00.bin
 /firmware/CE147F01.bin
