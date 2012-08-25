@@ -74,35 +74,34 @@ PRODUCT_LOCALES += hdpi
 
 # Boot screen
 PRODUCT_COPY_FILES += \
-    device/samsung/galaxysplus/splash/ARIESVE.rle:root/ARIESVE.rle \
-    device/samsung/galaxysplus/splash/charging.rle:root/charging.rle \
-    device/samsung/galaxysplus/splash/ARIESVE.rle:recovery/ARIESVE.rle \
-    device/samsung/galaxysplus/splash/charging.rle:recovery/charging.rle 
+	device/samsung/galaxysplus/ARIESVE.rle:root/ARIESVE.rle \
+	device/samsung/galaxysplus/charging.rle:root/charging.rle \
+	device/samsung/galaxysplus/ARIESVE.rle:recovery/ARIESVE.rle \
+	device/samsung/galaxysplus/charging.rle:recovery/charging.rle 
 
 # These are the hardware-specific configuration files
 PRODUCT_COPY_FILES += \
-    device/samsung/galaxysplus/etc/gps.conf:system/etc/gps.conf \
-    device/samsung/galaxysplus/etc/wifi.conf:system/etc/wifi/wifi.conf \
-    device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    device/samsung/galaxysplus/etc/ts.conf:system/etc/ts.conf
-#    device/samsung/galaxysplus/etc/asound.conf:system/etc/asound.conf
+	device/samsung/galaxysplus/etc/gps.conf:system/etc/gps.conf \
+	device/samsung/galaxysplus/etc/wifi.conf:system/etc/wifi/wifi.conf \
+	device/samsung/galaxysplus/etc/ts.conf:system/ts.conf
+#	device/samsung/galaxysplus/etc/asound.conf:system/etc/asound.conf
 
 # Init files
 PRODUCT_COPY_FILES += \
-    device/samsung/ariesve-common/init.qcom.rc:root/init.qcom.rc \
-    device/samsung/ariesve-common/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
-    device/samsung/ariesve-common/vold.fstab:system/etc/vold.fstab \
-    device/samsung/ariesve-common/lpm.rc:root/lpm.rc \
-    $(LOCAL_PATH)/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
+	device/samsung/ariesve-common/init.qcom.rc:root/init.qcom.rc \
+	device/samsung/ariesve-common/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
+	device/samsung/ariesve-common/lpm.rc:root/lpm.rc \
+	device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+	device/samsung/galaxysplus/etc/vold.fstab:system/etc/vold.fstab \
+	device/samsung/galaxysplus/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf \
-    vendor/samsung/galaxysplus/proprietary/bin/BCM4329B1_002.002.023.0746.0000_SS_S1-plus-38_4MHz-TEST-ONLY.hcd:system/etc/bluetooth/BCM4329B1_002.002.023.0746.0000_SS_S1-plus-38_4MHz-TEST-ONLY.hcd
+	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf 
 
 # Media configuration xml file
 PRODUCT_COPY_FILES += \
-    device/samsung/ariesve-common/media_profiles.xml:system/etc/media_profiles.xml
+	device/samsung/ariesve-common/media_profiles.xml:system/etc/media_profiles.xml
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -122,15 +121,9 @@ PRODUCT_COPY_FILES += \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
 	vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
-# Additional framework
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxysplus/proprietary/framework/seccamera.jar:system/framework/seccamera.jar \
-    vendor/samsung/galaxysplus/proprietary/framework/sec_feature.jar:system/framework/sec_feature.jar \
-    vendor/samsung/galaxysplus/proprietary/framework/sechardware.jar:system/framework/sechardware.jar
-
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-    device/samsung/ariesve-common/sec_jack.kl:system/usr/keylayout/sec_jack.kl
+	device/samsung/ariesve-common/sec_jack.kl:system/usr/keylayout/sec_jack.kl
 
 # apns config file
 PRODUCT_COPY_FILES += \
@@ -195,15 +188,15 @@ PRODUCT_PACKAGES += \
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.opengles.version=131072
+	ro.opengles.version=131072
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.ril.hsxpa=1 \
-    ro.ril.gprsclass=10 \
-    ro.secure=0 \
-    ro.allow.mock.location=1 \
-    ro.debuggable=1
+	ro.ril.hsxpa=1 \
+	ro.ril.gprsclass=10 \
+	ro.secure=0 \
+	ro.allow.mock.location=1 \
+	ro.debuggable=1
 
 # These are the hardware-specific settings that are stored in system properties.
 # Note that the only such settings should be the ones that are too low-level to
@@ -226,16 +219,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.com.google.locationfeatures=1 \
-        ro.com.google.networklocation=1
+	ro.com.google.locationfeatures=1 \
+	ro.com.google.networklocation=1
 
 # Extended JNI checks
 # The extended JNI checks will cause the system to run more slowly, but they can spot a variety of nasty bugs 
 # before they have a chance to cause problems.
 # Default=true for development builds, set by android buildsystem.
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.kernel.android.checkjni=0 \
-    dalvik.vm.checkjni=false
+	ro.kernel.android.checkjni=0 \
+	dalvik.vm.checkjni=false
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise
