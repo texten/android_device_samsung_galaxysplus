@@ -93,8 +93,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/ariesve-common/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
     device/samsung/ariesve-common/vold.fstab:system/etc/vold.fstab \
     device/samsung/ariesve-common/lpm.rc:root/lpm.rc \
-    $(LOCAL_PATH)/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh \
-    device/samsung/galaxysplus/PowerOn.wav:system/etc/PowerOn.wav
+    $(LOCAL_PATH)/recovery/fix_reboot.sh:recovery/root/sbin/fix_reboot.sh 
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
