@@ -34,7 +34,6 @@
 
 /etc/init.qcom.bt.sh
 /etc/init.qcom.fm.sh
-/etc/media_profiles.xml
 /etc/register_data.xml
 /etc/seccamera.xml
 /etc/sec_feature.xml
@@ -55,7 +54,6 @@
 /wifi/bcm4329_sta.bin
 /wifi/nvram_mfg.txt
 /wifi/nvram_net.txt
-/wifi/wpa_supplicant.conf
 
 /firmware/CE147F00.bin
 /firmware/CE147F01.bin
