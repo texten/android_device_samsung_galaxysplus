@@ -97,7 +97,14 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth configuration files
 PRODUCT_COPY_FILES += \
-	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf 
+	system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf \
+	device/samsung/galaxysplus/etc/firmware/BCM4329B1_002.002.023.0746.0000_SS_S1-plus-38_4MHz-TEST-ONLY.hcd:system/etc/bluetooth/BCM4329B1_002.002.023.0746.0000_SS_S1-plus-38_4MHz-TEST-ONLY.hcd 
+
+# Wifi configuration files
+PRODUCT_COPY_FILES += \
+	device/samsung/galaxysplus/etc/firmware/bcm4329_aps.bin:system/etc/firmware/bcm4329_aps.bin \
+	device/samsung/galaxysplus/etc/firmware/bcm4329_sta.bin:system/etc/firmware/bcm4329_sta.bin \
+	device/samsung/galaxysplus/etc/firmware/bcm4329_mfg.bin:system/etc/firmware/bcm4329_mfg.bin
 
 # Media configuration xml file
 PRODUCT_COPY_FILES += \
