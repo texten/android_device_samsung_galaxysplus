@@ -1,0 +1,14 @@
+Audio Fix for GT-I9001
+------------------------
+
+Move the Files 
+
+Android.mk 
+
+and 
+
+AudioHardware.cpp
+
+to Source:
+
+hardware/msm7k/libaudio-msm7x30
