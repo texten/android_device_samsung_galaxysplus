@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxysplus/etc/gps.conf:system/etc/gps.conf \
 	device/samsung/galaxysplus/etc/wifi.conf:system/etc/wifi/wifi.conf \
-	device/samsung/galaxysplus/etc/ts.conf:system/ts.conf
+	device/samsung/galaxysplus/etc/ts.conf:system/etc/ts.conf
 #	device/samsung/galaxysplus/etc/asound.conf:system/etc/asound.conf
 
 # Init files

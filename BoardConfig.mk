@@ -154,9 +154,9 @@ BOARD_WLAN_DEVICE := bcm4329
 WIFI_BAND := 802_11_ABG
 WIFI_DRIVER_MODULE_NAME :=  "dhd"
 WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/dhd.ko"
-WIFI_DRIVER_FW_STA_PATH := "/system/etc/wifi/bcm4329_sta.bin"
-WIFI_DRIVER_FW_AP_PATH := "/system/etc/wifi/bcm4329_aps.bin"
-WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/wifi/bcm4329_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt iface_name=eth0"
+WIFI_DRIVER_FW_STA_PATH := "/system/etc/firmware/bcm4329_sta.bin"
+WIFI_DRIVER_FW_AP_PATH := "/system/etc/firmware/bcm4329_aps.bin"
+WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/firmware/bcm4329_sta.bin nvram_path=/system/etc/firmware/nvram_net.txt iface_name=eth0"
 
 # Vold
 BOARD_VOLD_MAX_PARTITIONS := 29
