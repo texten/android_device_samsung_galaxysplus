@@ -62,6 +62,7 @@
 /lib/libActionShot.so
 /lib/libarccamera.so
 /lib/libaudioalsa.so
+/lib/libC2D2.so
 /lib/libcamera.so
 /lib/libcamera_client.so
 /lib/libcamerafirmwarejni.so
@@ -76,6 +77,7 @@
 /lib/liboemcamera.so
 /lib/liboem_rapi.so
 /lib/liboncrpc.so
+/lib/libOpenVG.so
 /lib/liboverlay.so
 /lib/libPanoraMax1.so
 /lib/libPlusMe.so
