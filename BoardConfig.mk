@@ -172,7 +172,7 @@ BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/galaxysplus/recovery/graphics.c
 BOARD_USES_MMCUTILS := true
 BOARD_USES_BML_OVER_MTD := true
 BOARD_HAS_NO_MISC_PARTITION := true
-TARGET_RECOVERY_INITRC := device/samsung/ariesve-common/recovery.rc
+TARGET_RECOVERY_INITRC := device/samsung/galaxysplus/init.recovery.rc
 
 # Partitions
 BOARD_HAS_SDCARD_INTERNAL := true

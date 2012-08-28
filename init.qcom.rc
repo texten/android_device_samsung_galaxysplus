@@ -19,10 +19,6 @@ on fs
   exec apply_system_policy /dev/block/mmcblk0p27 ext4
   mount ext4 /dev/block/mmcblk0p27  /efs wait nosuid nodev noatime nodiratime barrier=0
 
-# FIXME: vold is not configured now
-#  mount vfat /dev/block/mmcblk0p28 /mnt/sdcard wait nosuid nodev noatime nodiratime
-#  mount vfat /dev/block/mmcblk1p1 /mnt/sdcard/external_sd wait nosuid nodev noatime nodiratime
-
 
 on boot-pause
 # from init.qcom.rc
