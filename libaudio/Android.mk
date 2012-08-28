@@ -1,4 +1,4 @@
-ifneq ($(TARGET_PROVIDES_LIBAUDIO),true)
+ifneq ($(BUILD_TINY_ANDROID),true)
 
 LOCAL_PATH := $(call my-dir)
 
