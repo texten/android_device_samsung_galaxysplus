@@ -89,7 +89,6 @@ PRODUCT_COPY_FILES += \
 # Init files
 PRODUCT_COPY_FILES += \
 	device/samsung/galaxysplus/init.qcom.rc:root/init.qcom.rc \
-	device/samsung/galaxysplus/init.qcom.usb.rc:root/init.qcom.usb.rc \
 	device/samsung/galaxysplus/lpm.rc:root/lpm.rc \
 	device/samsung/galaxysplus/ueventd.gt-i9001.rc:root/ueventd.gt-i9001.rc \
 	device/samsung/galaxysplus/etc/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
