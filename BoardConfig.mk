@@ -21,9 +21,6 @@
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
 
-USE_CAMERA_STUB := true
-
-
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
@@ -63,7 +60,7 @@ BOARD_USE_FRAMEBUFFER_ALPHA_CHANNEL := true
 USE_OPENGL_RENDERER := true
 BOARD_USES_OVERLAY := true
 
-TARGET_USES_C2D_COMPOSITION := false
+TARGET_USES_C2D_COMPOSITION := true
 TARGET_USES_OVERLAY := true
 TARGET_USES_SF_BYPASS := false
 #TARGET_GRALLOC_USES_ASHMEM := false
@@ -71,7 +68,7 @@ TARGET_USES_GENLOCK := true
 TARGET_FORCE_CPU_UPLOAD := true
 
 # Camera
-USE_CAMERA_STUB := false
+USE_CAMERA_STUB := true
 #BOARD_V4L2_DEVICE := /dev/video0
 BOARD_CAMERA_DEVICE := /dev/video20
 #BOARD_SECOND_CAMERA_DEVICE := /dev/video0
@@ -141,14 +138,14 @@ BOARD_KERNEL_CMDLINE := console=null
 TARGET_PREBUILT_KERNEL := device/samsung/galaxysplus/kernel
 
 # Partition sizes
+# these looks like real (obtained from fdisk blocks * 1024), but don't attempt to flash /data without some checking first.
+# /system is checked, and we generate no image for /cache
 BOARD_BOOTIMAGE_PARTITION_SIZE := 5242880
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 7864320
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 545259520
-# these looks like real (obtained from fdisk blocks * 1024), but don't attempt to flash /data without some checking first.
-# /system is checked, and we generate no image for /cache
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1447034880
 BOARD_CACHEIMAGE_PARTITION_SIZE := 104857600
-BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Connectivity - Wi-Fi
 WPA_SUPPLICANT_VERSION := VER_0_6_X
@@ -162,7 +159,7 @@ WIFI_DRIVER_FW_AP_PATH := "/system/etc/firmware/bcm4329_aps.bin"
 WIFI_DRIVER_MODULE_ARG  := "firmware_path=/system/etc/firmware/bcm4329_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt iface_name=eth0"
 
 # Vold
-BOARD_VOLD_MAX_PARTITIONS := 29
+BOARD_VOLD_MAX_PARTITIONS := 28
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 # Recovery
