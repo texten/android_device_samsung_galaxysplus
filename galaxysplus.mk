@@ -141,9 +141,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hostap\
     com.android.future.usb.accessory \
-    gralloc.msm7x30 \
+    gralloc.msm7k \
     gralloc.default \
-    lights.msm7x30 \
+    lights.msm7k \
     overlay.default \
     sensors.default \
     libaes \

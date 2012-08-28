@@ -38,7 +38,7 @@ BOARD_HAS_DOWNLOAD_MODE := true
 
 TARGET_PROVIDES_INIT := true
 TARGET_PROVIDES_INIT_TARGET_RC := true
-TARGET_BOARD_PLATFORM := msm7x30
+TARGET_BOARD_PLATFORM := msm7k
 TARGET_BOOTLOADER_BOARD_NAME := GT-I9001
 
 # Assert
@@ -167,7 +167,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysplus/recovery/recovery_ui.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/galaxysplus/recovery/graphics.c
 BOARD_USES_MMCUTILS := true
-BOARD_USES_BML_OVER_MTD := true
+#BOARD_USES_BML_OVER_MTD := true
 BOARD_HAS_NO_MISC_PARTITION := true
 TARGET_RECOVERY_INITRC := device/samsung/galaxysplus/init.recovery.rc
 
