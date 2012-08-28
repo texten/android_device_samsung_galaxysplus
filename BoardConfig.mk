@@ -20,6 +20,8 @@
 # WARNING: This line must come *before* including the proprietary
 # variant, so that it gets overwritten by the parent (which goes
 # against the traditional rules of inheritance).
+USE_CAMERA_STUB := true
+
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -68,7 +70,7 @@ TARGET_USES_GENLOCK := true
 TARGET_FORCE_CPU_UPLOAD := true
 
 # Camera
-USE_CAMERA_STUB := true
+USE_CAMERA_STUB := false
 #BOARD_V4L2_DEVICE := /dev/video0
 BOARD_CAMERA_DEVICE := /dev/video20
 #BOARD_SECOND_CAMERA_DEVICE := /dev/video0
@@ -102,8 +104,6 @@ BOARD_USES_QCOM_AUDIO_RESETALL := true
 #BOARD_USES_QCOM_AUDIO_LPA := true
 # We use library under libaudio/
 TARGET_PROVIDES_LIBAUDIO := true
-
-
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
