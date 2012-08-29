@@ -75,4 +75,3 @@ on property:persist.service.adb.enable=1
 
 on property:persist.service.adb.enable=0
   stop adbd
-
